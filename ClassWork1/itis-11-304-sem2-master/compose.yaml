@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    container_name: my_fisd_db
+    environment:
+      - 'POSTGRES_DB=my_database'
+      - 'POSTGRES_PASSWORD=pass'
+      - 'POSTGRES_USER=user'
+    ports:
+      - "5432:5432"
